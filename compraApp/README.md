@@ -10,3 +10,7 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Configurando para desenvolvimento
+
+http://www.justinmccandless.com/blog/Getting+a+Yeoman+App+Working+on+a+New+Machine+after+Cloning
