@@ -13,4 +13,9 @@ Running `grunt test` will run the unit tests with karma.
 
 ## Configurando para desenvolvimento
 
-http://www.justinmccandless.com/blog/Getting+a+Yeoman+App+Working+on+a+New+Machine+after+Cloning
+Instalar o yeoman:
+- http://yeoman.io/codelab/setup.html
+
+Rodar os seguintes comandos:
+- npm install
+- bower update
