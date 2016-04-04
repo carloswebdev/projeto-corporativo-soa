@@ -10,3 +10,12 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Configurando para desenvolvimento
+
+Instalar o yeoman:
+- http://yeoman.io/codelab/setup.html
+
+Rodar os seguintes comandos:
+- npm install
+- bower update

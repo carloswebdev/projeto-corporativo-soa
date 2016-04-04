@@ -47,18 +47,15 @@
             <a class="navbar-brand" href="#/">CompraApp</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="#bs-example-navbar-collapse-1">
-
-            <ul class="nav navbar-nav">
-              <div class="button navbar-right">
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Login</button>
-                  <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cadastrar</button>
-              </div>
-              <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#/">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Compradores</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Interesses</a></li>
-              </ul>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="button navbar-right">
+                <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Login</button>
+                <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cadastrar</button>
+            </div>
+            <ul class="main-nav nav navbar-nav navbar-right">
+              <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#/">Home</a></li>
+              <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#/">Compradores</a></li>
+              <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#/">Interesses</a></li>
             </ul>
           </div>
         </div>
@@ -69,9 +66,51 @@
     <ng-view></ng-view>
     <!--/div -->
 
-    <div class="footer">
+    <div class="footer-area">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="row footer">
+            <div class="col-md-4">
+                <div class="single-footer">
+                    <span class="wow pulse" data-wow-delay="1s" >CompraApp</span>
+                    <!-- img src="img/footer-logo.png" alt="" class="wow pulse" data-wow-delay="1s" -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quaerat facere blanditiis tempora sequi nulla accusamus, possimus cum necessitatibus suscipit quia autem mollitia, similique quisquam molestias. Vel unde, blanditiis.</p>
+                </div>
+            </div>
+            <!-- div class="col-md-4">
+                <div class="single-footer">
+                    <h4>Twitter update</h4>
+                    <div class="twitter-updates">
+                        <div class="single-tweets">
+                            <h5>ABOUT 9 HOURS</h5>
+                            <p><strong>AGOMeet Aldous</strong> - a Brave New World for #rails with more cohesion, less coupling and greater dev speed <a href="http://t.co/rsekglotzs">http://t.co/rsekglotzs</a></p>
+                        </div>
+                        <div class="single-tweets">
+                            <h5>ABOUT 9 HOURS</h5>
+                            <p><strong>AGOMeet Aldous</strong> - a Brave New World for #rails with more cohesion, less coupling and greater dev speed <a href="http://t.co/rsekglotzs">http://t.co/rsekglotzs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-footer">
+                    <h4>Useful lnks</h4>
+                    <div class="footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="" class="active">Services</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Customers Testimonials</a></li>
+                            <li><a href="">Affliate</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div -->
+        </div>
+        <div class="row footer-copy">
+            <p><span>(C) webstie, All rights reserved</span> | <span>Graphic Designed by <a href="https://dribbble.com/siblu">Eftakher Alam</a></span> | <span> Web Designed by <a href="http://ohidul.me">Ohidul Islam</a></span> </p>
+        </div>
       </div>
     </div>
 
@@ -90,15 +129,16 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="scripts/js-template/owl.carousel.min.js"></script>
     <script src="scripts/js-template/wow.js"></script>
     <script src="scripts/js-template/main.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
+
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
