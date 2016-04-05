@@ -11,8 +11,8 @@ public class QueroVenderResource {
 
 	@GET
 	@Path("{modelo}")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces({MediaType.APPLICATION_JSON})
     public String pesquisa(@PathParam(value = "modelo") String modelo) {
-        return "Você está querendo vender um: " + modelo;
+        return "{\"resposta\": \"Você está querendo vender um: " + modelo + "\"}";
     }
 }

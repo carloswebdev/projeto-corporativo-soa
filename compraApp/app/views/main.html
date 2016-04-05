@@ -9,12 +9,12 @@
   <div class="container slider-content">
       <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-              <h2>Anuncie seu interesse em Comprar</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
+              <h2>Encontre seus clientes</h2>
+              <p>Pessoas que querem o que você vende!</p>
               <div class="search-form wow pulse" data-wow-delay="0.8s">
                   <form action="" class=" form-inline">
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Palavra-chave">
+                          <input type="text" class="form-control" ng-model="query" placeholder="Palavra-chave">
                       </div>
                       <div class="form-group">
                           <select name="" id="" class="form-control">
@@ -33,11 +33,12 @@
                               <option>App Design</option>
                           </select>
                       </div>
-                      <input type="submit" class="btn" value="Search">
+                      <input type="submit" class="btn" value="Pesquisar" ng-click="pesquisar(query)">
 
 
                   </form>
               </div>
+              <h2>{{resposta}}</h2>
           </div>
       </div>
   </div>
