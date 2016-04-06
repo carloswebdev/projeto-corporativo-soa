@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="QueroComprar" id="edf8070a" version="3.1.1">
+  <folder name="Business" id="23b26d97" type="business"/>
+  <folder name="Application" id="46288d35" type="application">
+    <element xsi:type="archimate:ApplicationComponent" id="ef21cbba" name="Web"/>
+    <element xsi:type="archimate:DataObject" id="6948a6ca" name="Compradores DB"/>
+    <element xsi:type="archimate:ApplicationService" id="9f210142" name="Compradores"/>
+    <element xsi:type="archimate:ApplicationComponent" id="170c8f81" name="Compradores"/>
+  </folder>
+  <folder name="Technology" id="27854efc" type="technology"/>
+  <folder name="Motivation" id="00c4f061" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="b952fe14" type="implementation_migration"/>
+  <folder name="Connectors" id="4268afad" type="connectors"/>
+  <folder name="Relations" id="c372c7c1" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="b21981f6" source="9f210142" target="170c8f81"/>
+    <element xsi:type="archimate:UsedByRelationship" id="bb6b6ad7" source="ef21cbba" target="9f210142"/>
+    <element xsi:type="archimate:AccessRelationship" id="130a3093" source="170c8f81" target="6948a6ca" accessType="2">
+      <property/>
+    </element>
+  </folder>
+  <folder name="Views" id="7ec8c462" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="4e1a5331" name="Default View">
+      <child xsi:type="archimate:Group" id="be5ae1ae" name="Front-end">
+        <bounds x="60" y="24" width="241" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="8c4112ae" textAlignment="2" archimateElement="ef21cbba">
+          <bounds x="24" y="36" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="74a076bb" source="8c4112ae" target="a33d8d8e" relationship="bb6b6ad7"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="0e3e8340" name="Backend">
+        <bounds x="60" y="204" width="241" height="181"/>
+        <child xsi:type="archimate:DiagramObject" id="a33d8d8e" textAlignment="2" targetConnections="74a076bb" archimateElement="9f210142">
+          <bounds x="24" y="48" width="120" height="33"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d82fde5d" source="a33d8d8e" target="23b3e92b" relationship="b21981f6"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="23b3e92b" textAlignment="2" targetConnections="d82fde5d" archimateElement="170c8f81">
+          <bounds x="24" y="108" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="59f07e64" source="23b3e92b" target="096502ae" relationship="130a3093"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="096502ae" textAlignment="2" targetConnections="59f07e64" archimateElement="6948a6ca">
+        <bounds x="60" y="444" width="241" height="55"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
