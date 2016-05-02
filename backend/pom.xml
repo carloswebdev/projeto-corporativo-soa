@@ -32,9 +32,10 @@
 			<artifactId>jersey-container-servlet</artifactId>
 			<version>${version.jersey}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
+			<artifactId>jersey-media-moxy</artifactId>
 			<version>${version.jersey}</version>
 		</dependency>
 
@@ -58,11 +59,11 @@
 
 
 		<!-- hibernate -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate</groupId> -->
-<!-- 			<artifactId>hibernate-core</artifactId> -->
-<!-- 			<version>${hibernate.version}</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate</groupId> -->
+		<!-- <artifactId>hibernate-core</artifactId> -->
+		<!-- <version>${hibernate.version}</version> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>

@@ -2,7 +2,6 @@ package api;
 
 import javax.ws.rs.ApplicationPath;
 
-import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 @ApplicationPath("v1")
@@ -14,6 +13,6 @@ public class RestConfig extends ResourceConfig {
 		packages(this.getClass().getPackage().getName());
 
 		// activate Jackson-based JSON support
-		register(JacksonFeature.class);
+//		register(JacksonFeature.class);
 	}
 }
