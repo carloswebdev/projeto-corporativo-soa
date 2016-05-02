@@ -14,6 +14,9 @@
 		<version.jetty>9.3.7.v20160115</version.jetty> 		<!-- latest in 9.3.x -->
 		<version.jersey>2.22.2</version.jersey> 			<!-- latest for which 'jersey-gf-cdi-ban-custom-hk2-binding' exists -->
 		<version.weld>2.3.3.Final</version.weld> 			<!-- same version used in stand-alone Jetty as the 'cdi' module -->
+		<hibernate.version>4.3.11.Final</hibernate.version>
+		<mysql.version>5.1.19</mysql.version>
+		<jandex.version>2.0.1.Final</jandex.version>
 	</properties>
 
 	<dependencies>
@@ -45,6 +48,33 @@
 			<groupId>org.jboss.weld.servlet</groupId>
 			<artifactId>weld-servlet-core</artifactId>
 			<version>${version.weld}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss</groupId>
+			<artifactId>jandex</artifactId>
+			<version>${jandex.version}</version>
+		</dependency>
+
+
+		<!-- hibernate -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.hibernate</groupId> -->
+<!-- 			<artifactId>hibernate-core</artifactId> -->
+<!-- 			<version>${hibernate.version}</version> -->
+<!-- 		</dependency> -->
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<!-- MySQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 		</dependency>
 
 	</dependencies>
