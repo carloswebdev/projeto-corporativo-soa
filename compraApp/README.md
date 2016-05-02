@@ -21,4 +21,5 @@ Rodar os seguintes comandos:
 - bower update
 - grunt serve
 
-Após o ultimo um servidor node.js vai ser startado e o app ficará disponivel em localhost:9000/compraApp
+Após o ultimo um servidor node.js vai ser startado e o app ficará disponivel em localhost:9000
+
